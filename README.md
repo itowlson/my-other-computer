@@ -1,1 +1,1 @@
-# my-other-computer
+Demos and slides for "My Other Computer is an Azure Datacentre", Ignite NZ 2016.
