@@ -15,9 +15,9 @@ namespace BatchCSharpCheatSheet
         static void Main(string[] args)
         {
             var batchCredentials = new BatchSharedKeyCredentials(
-                Environment.GetEnvironmentVariable("MAB_BatchUrl"),
-                Environment.GetEnvironmentVariable("MAB_BatchAccount"),
-                Environment.GetEnvironmentVariable("MAB_BatchKey")
+                Environment.GetEnvironmentVariable("AZURE_BATCH_ENDPOINT"),
+                Environment.GetEnvironmentVariable("AZURE_BATCH_ACCOUNT"),
+                Environment.GetEnvironmentVariable("AZURE_BATCH_ACCESS_KEY")
             );
 
             using (var batchClient = BatchClient.Open(batchCredentials))
